@@ -1,7 +1,7 @@
-=== Code Plus ===
+=== Modules ===
 Contributors: wpvncom
 Donate link: https://www.paypal.me/copvn
-Tags: code-snippets, code-snippets-plugin, snippet, snippets, wpvnteam
+Tags: code-snippets, code-snippets-plugin, snippet, snippets, modules, module
 Requires at least: 6.2
 Tested up to: 6.7.1
 Stable tag: 1.0.0
@@ -18,20 +18,20 @@ No need for editing functions.php file any more, you can easily add new PHP code
 
 == Installation ==
 
-You can install the Code Plus from your WordPress Dashboard or manually via FTP.
+You can install the Modules from your WordPress Dashboard or manually via FTP.
 
 = From WordPress Dashboard =
 
 1. Navigate to 'Plugins -> Add New' from your WordPress dashboard.
-2. Search for `Code Plus` and install it.
+2. Search for `Modules` and install it.
 3. Activate the plugin from Plugins menu.
 4. Configure the plugin's settings
 
 = Manual Installation =
 
-1. Download the plugin file: `codeplus.zip`
+1. Download the plugin file: `modules.zip`
 2. Unzip the file
-3. Upload the`codeplus.zip` folder to your `/wp-content/plugins` directory (do not rename the folder)
+3. Upload the`modules.zip` folder to your `/wp-content/plugins` directory (do not rename the folder)
 4. Activate the plugin from Plugins menu.
 5. Configure the plugin's settings
 
