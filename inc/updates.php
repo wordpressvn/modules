@@ -145,3 +145,4 @@ class ModuleUpdater {
     }
 
 }
+new ModuleUpdater();
