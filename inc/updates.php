@@ -16,7 +16,7 @@ class ModuleUpdater {
         }
 
         $this->plugin_slug   = dirname ( plugin_basename( __DIR__ ) );
-        $this->version       = '1.0.0';
+        $this->version       = MODULES_VERSION;
         $this->cache_key     = 'modules_updater';
         $this->cache_allowed = false;
 
@@ -131,11 +131,6 @@ class ModuleUpdater {
     }
 
     public function purge( $upgrader, $options ) {
-
-        if ( 'update' === $options['action'] && 'plugin' === $options[ 'type' ] ) {
-            // refresh configuration
-            ( new Configurations )->refresh_configs();
-        }
 
         if ( $this->cache_allowed && 'update' === $options['action'] && 'plugin' === $options[ 'type' ] ) {
             // just clean the cache when new plugin version is installed
