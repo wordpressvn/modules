@@ -5,7 +5,7 @@
 	"author_profile" : "https://profiles.wordpress.org/wpvncom",
     "donate_link" : "https://wpvnteam.com/donate/",
 	"version" : "1.0.0",
-	"download_url" : "https://github.com/wordpressvn/modules/releases/download/1.0.0/modules.zip",
+	"download_url" : "https://github.com/wordpressvn/modules/archive/refs/tags/1.0.0.zip",
 	"requires" : "6.2",
 	"tested" : "6.7.1",
 	"requires_php" : "7.4",
