@@ -1,0 +1,165 @@
+[tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+[tooltip]:before,
+[tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: all .2s ease;
+    font-size: 12px;
+}
+[tooltip]:before {
+    content: attr(tooltip);
+    height: 13px;
+    position: absolute;
+    top: -20px;
+    padding: 6px;
+    border-radius: 3px;
+    line-height: 1.2;
+    color: #fff;
+    background: #000;
+    box-shadow: 0 3px 8px rgba(165, 165, 165, 0.5);
+}
+[tooltip]:after {
+    content: '';
+    border-left: 5px solid transparent;
+    top: 0px;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+}
+[tooltip]:not([tooltip=""]):hover:before {
+    visibility: visible;
+    opacity: 0.8;
+    top: -30px
+}
+[tooltip]:not([tooltip=""]):hover:after {
+    visibility: visible;
+    opacity: 0.8;
+    top: -5px
+}
+.wmb-input label code {
+    margin-left: auto;
+}
+.wmb-input input[type="text"], .wmb-input select, .wmb-input textarea {
+    width: 100%;
+    padding: 4px 8px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.wmb-input {
+    display: flex;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #EAECF0;
+    align-items: stretch;
+    position: relative;
+    bottom: -12px;
+    left: -12px;
+    width: calc(100% + 24px);
+    margin: 0;
+}
+.wmb-input > label {
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 12px 10px;
+    border-color: #e1e1e1;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    background: #f9f9f9;
+    font-weight: 500;
+}
+.wmb-input > div {
+    float: left;
+    width: 80%;
+    margin: 0;
+    padding: 12px 10px;
+}
+#side-sortables .wmb-input > label {
+    width: auto !important;
+    border-style: none !important;
+    padding: 5px 10px;
+}
+#side-sortables .wmb-input > div {
+    width: auto !important;
+}
+#side-sortables .wmb-input {
+    flex-direction: column;
+}
+.wmb-input:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.postbox-container .wmb-input:first-child {
+    margin-top: -18px;
+}
+
+.metabox-location-advanced .wmb-input {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+}
+
+.metabox-location-side  .wmb-input {
+    display: block;
+}
+
+.metabox-location-advanced .wmb-input label {
+    min-width: 200px;
+}
+
+.wmb-input-description {
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+}
+
+.wmb-code-editor {
+    border: 1px solid #ddd;
+}
+
+.wmb-repeater-container {
+    position: relative;
+    overflow: auto;
+}
+
+.wmb-repeater-option-group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 4px 8px;
+}
+
+.wmb-delete, .wmb-drag {
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+.wmb-delete {
+    cursor: pointer;
+}
+
+.wmb-drag {
+    cursor: grab;
+}
+
+.wmb-repeater-option-group {
+    border: 1px solid #ddd;
+    display: block;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.wmb-repeater-option-group-content {
+    padding: 10px;
+}

@@ -1,0 +1,1 @@
+<div><?php \wp_editor($option->get_value_attribute(), $option->get_id_attribute(), $option->get_config()); ?></div>

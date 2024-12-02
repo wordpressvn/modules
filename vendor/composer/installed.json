@@ -1,0 +1,56 @@
+{
+    "packages": [
+        {
+            "name": "wordpressvn/wp-meta-box",
+            "version": "1.5.0",
+            "version_normalized": "1.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wordpressvn/wp-meta-box.git",
+                "reference": "1daebdac969d56698590a81bfa806d72cdd9e073"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wordpressvn/wp-meta-box/zipball/1daebdac969d56698590a81bfa806d72cdd9e073",
+                "reference": "1daebdac969d56698590a81bfa806d72cdd9e073",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.17.3",
+                "phpcompatibility/php-compatibility": "*"
+            },
+            "time": "2024-09-24T04:02:32+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "WPVNTeam\\WPMetaBox\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "TienCOP",
+                    "email": "support@wordpressvn.com"
+                }
+            ],
+            "description": "Handy package to make creating WordPress meta boxes a breeze.",
+            "support": {
+                "issues": "https://github.com/wordpressvn/wp-meta-box/issues",
+                "source": "https://github.com/wordpressvn/wp-meta-box/tree/1.5.0"
+            },
+            "install-path": "../wordpressvn/wp-meta-box"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
