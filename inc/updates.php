@@ -32,7 +32,7 @@ class ModuleUpdater {
 
         if( false === $remote || ! $this->cache_allowed ) {
 
-            $remote = wp_remote_get( 'https://raw.githubusercontent.com/wordpressvn/modules/refs/heads/master/composer.json', [
+            $remote = wp_remote_get( 'https://raw.githubusercontent.com/wordpressvn/modules/refs/heads/master/inc/info.json', [
                     'timeout' => 10,
                     'headers' => [
                         'Accept' => 'application/json'
