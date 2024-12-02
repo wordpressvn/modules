@@ -124,7 +124,7 @@ function modules_page() {
                                 <input type="checkbox" name="classes[]" value="<?php echo esc_attr($class_name); ?>" <?php checked($is_active); ?>>
                             </th>
                             <td class="plugin-title column-primary"><?php echo $is_active ? '<strong>' . $module_data['Name'] . '</strong>' : $module_data['Name']; ?>
-                            <?php if ($class_name !== "add-module") { ?>
+                            <?php if ($class_name !== "module-pro") { ?>
                                 <div class="row-actions visible">
                                     <span><a href="<?php echo esc_url(admin_url('plugin-editor.php?file=' . urlencode('modules/classes/' . $class_name . '.php') . '&plugin=' . urlencode('modules/modules.php'))); ?>">
                                         <?php esc_html_e('Edit'); ?>
